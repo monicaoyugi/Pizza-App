@@ -104,16 +104,41 @@
 
             </div>
         </div>
-   
-   
+
+
     </div>
 
-    <div>
+
+        <!-- order summary -->
+
+        <div class="order-summary" id="sum-order">
+            <h1 class="text-center" id="summary">Order Summary</h1>
+            <h2 class="text-center summary" style="">Provide location details</h2>
+            <ol id="list" class="text-center sum" style="font-family: system-ui; font-size: 24px;"> <br>Flavour :   vegtikka<br>Size :   regular<br>Crust :     thin<br>Toppings :     tomato<br> Number of pizzas :    <br>Total Price :  180<br><br></ol>
         
-    </div>
+        
+            <div class="cdata-overlay" style="display: none;">
+                <div class="customerdata row">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-group col-sm-6 data" id="data">
+                        <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                        <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                        <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                        <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make Delivery</button>
+                    </form>
+        
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <div class="d-block mx-auto text-center">
+                <button class="deliver" style="">Make Delivery</button>
+                <button class="delivernot" style="">Pick Up</button>
+            </div>
+        </div>
+
 
     <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
