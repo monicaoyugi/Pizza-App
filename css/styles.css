@@ -9,6 +9,10 @@ body {
 
 .wrapper {
   text-align: center;
+  background-image: url("../img/pizza2.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  
 }
 .nav {
   height: 80px;
@@ -24,28 +28,28 @@ body {
   color: green;
 }
 
-ul {
+.nav ul {
   margin: 5px auto;
   width: 800px;
   list-style: none;
   background: rgba(0, 0, 0, 0.2);
 }
-li {
+
+ .nav li {
   margin-top: 6px;
   display: inline-block;
   text-decoration: none;
 }
 
-li a {
+ .nav li a {
   text-decoration: none;
-  /* color: #fff; */
   font-weight: lighter;
   font-size: 24px;
   transition: 1s;
   padding: 25px 30px;
 }
 
-li a:hover {
+.nav li a:hover {
   transition: 1s;
   background: rgba(255, 255, 255, 0.7);
   color: orangered;
