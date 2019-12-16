@@ -9,44 +9,55 @@ body{
 
 /* Nav */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
+
+  .wrapper{
     text-align: center;
-    padding: 14px 16px;
+  }
+  .nav{
+    height: 80px;
+  }
+
+  .logo{
+  
+  }
+
+  ul{
+    margin: 5px auto;
+    width: 800px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.2);
+
+  }
+  li{
+    margin-top: 6px;
+    display: inline-block;
     text-decoration: none;
   }
+
   
-  li a:hover {
-    background-color: red;
+  li a{
+    text-decoration: none;
+    /* color: #fff; */
+    font-weight: lighter;
+    font-size: 24px;
+    transition: 1s;
+    padding: 25px 30px;
+
+
   }
 
-  .active {
-    background-color: #4CAF50;
+  li a:hover{
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.7);
+    color: orangered;
+
   }
 
-.overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 100%;
-}
 
 .orders{
   background-image: url('../img/pizza.jpg');
+  background-repeat: no-repeat;
+
 }
 
 
@@ -57,4 +68,18 @@ label{
 button{
     margin: 3%;
 }
+
+/* contacts */
+
+.contact-overlay {
+  background-image: url('../img/pizza.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .contact-overlay {
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.7);
+} */
+
 
