@@ -4,9 +4,9 @@ ___by Monica Oyugi___
 ## link to site
 
 
-## code grade
+<!-- ## code grade
 
-[![codebeat badge](https://codebeat.co/badges/e64d092f-8109-4585-bdde-77df3f2c4ff5)](https://codebeat.co/projects/github-com-monicaoyugi-delani-studio-master)
+[![codebeat badge](https://codebeat.co/badges/e64d092f-8109-4585-bdde-77df3f2c4ff5)](https://codebeat.co/projects/github-com-monicaoyugi-delani-studio-master) -->
 
 
 ## Description
@@ -14,7 +14,6 @@ ___by Monica Oyugi___
 
 ## Technology Used
 The web page is constructed out of HTML and CSS and Javascript. Also with assistance from their library counterpart i.e Bootstrap and jQuery.
-
 
 ## Contribution
 Created by https://github.com/monicaoyugi
