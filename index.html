@@ -5,29 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Order the Pizza</title>
+    <title >Order the Pizza</title>
     <!-- bootstrap css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <!-- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Caveat|Kalam|Pacifico|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    
-    
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <h1 id="piz-pap" class="">Pizz Amore!</h1>
-        <div class="navi">
-            <ul class="nav-items">
-                <li><a href="#menus">Menu</a></li>
-                <li><a href="#order">Orders</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
-    </nav> -->
-
-    <div class="wrapper">
-        <h1 id="piz-pap" class="logo">Pizz Amore!</h1>
+  <div class="wrapper">
+        <h1 id="piz-pap" class="logo">Pizza <span class="am"> Amore!</span></h1>
      
       <ul class="nav">
         <li><a href="#Menu">Menu</a></li>
@@ -53,13 +42,13 @@
     </div>
     <!-- order page -->
     <div class="orders" id="order">
-        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+        <h1 class="text-center" id="order-pizza" style="color: white;">Order Pizza</h1>
         <div class="form-group row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8 order-overlay text-center">
                 <form class="col-sm-6 offset-sm-3 text-center">
                     <label>Pick your pizza Flavour:</label>
-                    <select class="custom-select custom-select-md mb-3 flavour" required="">
+                    <select class="custom-select custom-select-md mb-3 flavour" id="flavour" required="">
                         <option value="vegtikka">Veg Tikka</option>
                         <option value="chickentikka">Chicken Tikka</option>
                         <option value="periperi">Peri-Peri Chicken</option>
@@ -71,33 +60,35 @@
                     </select>
                     <label>Chose your preferred Size:</label>
                     <select class="custom-select custom-select-md mb-3" id="size" required="">
-                        <option value="regular">Regular</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option value="300">Regular</option>
+                        <option value="500">Medium</option>
+                        <option value="800">Large</option>
                     </select>
                     <label for="crust">Choose your favorite Crust:</label>
                     <select class="custom-select custom-select-md mb-3" id="crust" required="">
-                        <option value="thin">Thin Crust @ Ksh. 100</option>
-                        <option value="thick">Thick Crust @ Ksh. 150</option>
-                        <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                        <option value="custom">Custom Crust @ sh. 280</option>
+                        <option value="100">Thin Crust @ Ksh. 100</option>
+                        <option value="150">Thick Crust @ Ksh. 150</option>
+                        <option value="180">FlatBread Crust @ sh. 180</option>
+                        <option value="280">Custom Crust @ sh. 280</option>
                     </select>
+                    <div class="Toppings">
                     <label>Select Your favourite Toppings</label>
                     <select class="custom-select custom-select-md mb-3" id="toppings" required="">
-                        <option value="tomato">Tomato @ sh. 80</option>
-                        <option value="onions">Onions @ sh. 80</option>
-                        <option value="mushroom">Mushroom @ sh. 80</option>
-                        <option value="greenpepper">Green Pepper @ sh. 80</option>
+                        <option value="80">Tomato @ sh. 80</option>
+                        <option value="80">Onions @ sh. 80</option>
+                        <option value="80">Mushroom @ sh. 80</option>
+                        <option value="80">Green Pepper @ sh. 80</option>
                         <option value=""></option>
-                        <option value="olives">Olives @ sh. 120</option>
-                        <option value="pineapple">Pineapple @ sh. 120</option>
-                        <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                        <option value="macon">Macon @ sh. 120</option>
-                        <option value="mince">Mince @ sh. 120</option>
+                        <option value="120">Olives @ sh. 120</option>
+                        <option value="120">Pineapple @ sh. 120</option>
+                        <option value="120">Sweet Corn @ sh. 120</option>
+                        <option value="120">Macon @ sh. 120</option>
+                        <option value="120">Mince @ sh. 120</option>
                         <option value=""></option>
-                        <option value="beef">Beef Peperoni @ sh. 170</option>
-                        <option value="chicken">Periperi Chicken @ sh. 170</option>
+                        <option value="170">Beef Peperoni @ sh. 170</option>
+                        <option value="170">Periperi Chicken @ sh. 170</option>
                     </select>
+                    </div>
                     <label for="number">Number of Pizza's</label>
                     <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                         required="">
@@ -105,6 +96,10 @@
 
                 </form>
                 <a href="#summary">
+
+                    <button type="submit" class="btn btn-success toppings" id="add-toppings">
+                        Add Toppings
+                    </button>
                     <button type="submit" class="btn btn-success checkout" id="checkout">
                         Checkout
                     </button>
@@ -123,7 +118,7 @@
         <h1 class="text-center" id="summary">Order Summary</h1>
         <h2 class="text-center summary" style="">Provide location details</h2>
         <ol id="list" class="text-center sum" style="font-family: system-ui; font-size: 24px;"> <br>Flavour: <br>Size:
-            <br> Crust : thin<br>Toppings : <br> Number of pizzas : <br>Total Price : <br> <br></ol>
+            <br> Crust : <br>Toppings : <br> Number of pizzas : <br>Total Price : <br> <br></ol>
 
 
         <div class="cdata-overlay" style="display: none;">
