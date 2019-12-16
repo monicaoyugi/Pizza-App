@@ -13,16 +13,30 @@
 </head>
 
 <body>
-    <!--Start Navigation //-->
-    <div class="topmenu">
+    
+    
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <h1 id="piz-pap" class="">Pizz Amore!</h1>
         <div class="navi">
             <ul class="nav-items">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#menus">Menu</a></li>
                 <li><a href="#order">Orders</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
         </div>
+    </nav> -->
+
+    <div class="wrapper">
+        <h1 id="piz-pap" class="logo">Pizz Amore!</h1>
+     
+      <ul class="nav">
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Order">Order</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
     </div>
+
+
     <!-- landing page -->
     <div class="landing" id="home">
         <div class="overlay">
@@ -39,102 +53,127 @@
     </div>
     <!-- order page -->
     <div class="orders" id="order">
-        <div class="order_img">
-            <div class="overlay">
-                <div class="form-group row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-8 order-overlay text-center">
-                        <form class="col-sm-6 offset-sm-3 text-center">
-                            <label>Pick your pizza Flavour</label>
-                            <select class="custom-select custom-select-md mb-3 flavour" required>
-                                <option value="">------</option>
-                                <option value="vegtikka">Veg Tikka</option>
-                                <option value="chickentikka">Chicken Tikka</option>
-                                <option value="periperi">Peri-Peri Chicken</option>
-                                <option value="bbq">BBQ Steak</option>
-                                <option value="boerewors">Boerewors</option>
-                                <option value="hawaiian">Hawaiian</option>
-                                <option value="mushroom">Chicken and Mushroom</option>
-                                <option value="regina">Regina Pizza</option>
-                            </select>
-                            <label>Chose your preferred Size</label>
-                            <select class="custom-select custom-select-md mb-3" id="size" required>
-                                <option value="">------</option>
-                                <option value="regular">Regular</option>
-                                <option value="medium">Medium</option>
-                                <option value="large">Large</option>
-                            </select>
-                            <label for="crust">Choose your favorite Crust</label>
-                            <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                <option value="">------</option>
-                                <option value="thin">Thin Crust @ Ksh. 100</option>
-                                <option value="thick">Thick Crust @ Ksh. 150</option>
-                                <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                                <option value="custom">Custom Crust @ sh. 280</option>
-                            </select>
-                            <label>Select Your favourite Toppings</label>
-                            <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                <option value="">------</option>
-                                <option value="tomato">Tomato @ sh. 80</option>
-                                <option value="onions">Onions @ sh. 80</option>
-                                <option value="mushroom">Mushroom @ sh. 80</option>
-                                <option value="greenpepper">Green Pepper @ sh. 80</option>
-                                <option value=""></option>
-                                <option value="olives">Olives @ sh. 120</option>
-                                <option value="pineapple">Pineapple @ sh. 120</option>
-                                <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                                <option value="macon">Macon @ sh. 120</option>
-                                <option value="mince">Mince @ sh. 120</option>
-                                <option value=""></option>
-                                <option value="beef">Beef Peperoni @ sh. 170</option>
-                                <option value="chicken">Periperi Chicken @ sh. 170</option>
-                            </select>
-                            <label for="number">Number of Pizza's</label>
-                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
-                                required>
-                        </form>
-                        <a href="#summary">
-                            <button type="submit" class="btn btn-success submit" id="submit">
-                                submit
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col-sm-2"></div>
-                </div>
+        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 order-overlay text-center">
+                <form class="col-sm-6 offset-sm-3 text-center">
+                    <label>Pick your pizza Flavour:</label>
+                    <select class="custom-select custom-select-md mb-3 flavour" required="">
+                        <option value="vegtikka">Veg Tikka</option>
+                        <option value="chickentikka">Chicken Tikka</option>
+                        <option value="periperi">Peri-Peri Chicken</option>
+                        <option value="bbq">BBQ Steak</option>
+                        <option value="boerewors">Boerewors</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="mushroom">Chicken and Mushroom</option>
+                        <option value="regina">Regina Pizza</option>
+                    </select>
+                    <label>Chose your preferred Size:</label>
+                    <select class="custom-select custom-select-md mb-3" id="size" required="">
+                        <option value="regular">Regular</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="crust">Choose your favorite Crust:</label>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required="">
+                        <option value="thin">Thin Crust @ Ksh. 100</option>
+                        <option value="thick">Thick Crust @ Ksh. 150</option>
+                        <option value="flatbread">FlatBread Crust @ sh. 180</option>
+                        <option value="custom">Custom Crust @ sh. 280</option>
+                    </select>
+                    <label>Select Your favourite Toppings</label>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required="">
+                        <option value="tomato">Tomato @ sh. 80</option>
+                        <option value="onions">Onions @ sh. 80</option>
+                        <option value="mushroom">Mushroom @ sh. 80</option>
+                        <option value="greenpepper">Green Pepper @ sh. 80</option>
+                        <option value=""></option>
+                        <option value="olives">Olives @ sh. 120</option>
+                        <option value="pineapple">Pineapple @ sh. 120</option>
+                        <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                        <option value="macon">Macon @ sh. 120</option>
+                        <option value="mince">Mince @ sh. 120</option>
+                        <option value=""></option>
+                        <option value="beef">Beef Peperoni @ sh. 170</option>
+                        <option value="chicken">Periperi Chicken @ sh. 170</option>
+                    </select>
+                    <label for="number">Number of Pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                        required="">
+
+
+                </form>
+                <a href="#summary">
+                    <button type="submit" class="btn btn-success checkout" id="checkout">
+                        Checkout
+                    </button>
+                </a>
 
             </div>
+            <div class="col-sm-2"></div>
         </div>
-
-
     </div>
 
 
-        <!-- order summary -->
 
-        <div class="order-summary" id="sum-order">
-            <h1 class="text-center" id="summary">Order Summary</h1>
-            <h2 class="text-center summary" style="">Provide location details</h2>
-            <ol id="list" class="text-center sum" style="font-family: system-ui; font-size: 24px;"> <br>Flavour :   vegtikka<br>Size :   regular<br>Crust :     thin<br>Toppings :     tomato<br> Number of pizzas :    <br>Total Price :  180<br><br></ol>
-        
-        
-            <div class="cdata-overlay" style="display: none;">
-                <div class="customerdata row">
-                    <div class="col-sm-3"></div>
-                    <form action="" class="form-group col-sm-6 data" id="data">
-                        <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
-                        <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
-                        <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
-                        <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make Delivery</button>
-                    </form>
-        
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-            <div class="d-block mx-auto text-center">
-                <button class="deliver" style="">Make Delivery</button>
-                <button class="delivernot" style="">Pick Up</button>
+    <!-- order summary -->
+
+    <div class="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary</h1>
+        <h2 class="text-center summary" style="">Provide location details</h2>
+        <ol id="list" class="text-center sum" style="font-family: system-ui; font-size: 24px;"> <br>Flavour: <br>Size:
+            <br> Crust : thin<br>Toppings : <br> Number of pizzas : <br>Total Price : <br> <br></ol>
+
+
+        <div class="cdata-overlay" style="display: none;">
+            <div class="customerdata row">
+                <div class="col-sm-3"></div>
+                <form action="" class="form-group col-sm-6 data" id="data">
+                    <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                    <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                    <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                    <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make
+                        Delivery</button>
+                </form>
+
+                <div class="col-sm-3"></div>
             </div>
         </div>
+        <div class="d-block mx-auto text-center">
+            <button class="deliver" style="">Make Delivery</button>
+            <button class="pick-up" style="">Pick Up</button>
+        </div>
+    </div>
+
+
+    <!-- contats section  -->
+
+    <div class="contact-overlay" id="contact">
+        <h1 class="text-center contact text-white">Contacts</h1>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 subs">
+                <h1 class="text-white text-center"> Call Us </h1>
+                <p class="text-center">+254 712 345678</p>
+                <form>
+                    <div class="email-info">
+                        <div class="form-group fill-all-form">
+                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                required="">
+                        </div>
+                    </div>
+                    <div class=" email-info text-center">
+                        <button class="btn click-me" onclick="subscribe();">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5">
+                <h4 class="text-center get-pizza">We Value your feedback..send us a mail</h4>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
 
 
     <script src="js/jquery-3.4.1.js"></script>
