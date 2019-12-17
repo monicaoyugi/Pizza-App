@@ -11,6 +11,12 @@ https://monicaoyugi.github.io/Pizza-App/
 [![codebeat badge](https://codebeat.co/badges/fb71b26e-36d9-4458-a0c3-af25e0113281)](https://codebeat.co/projects/github-com-monicaoyugi-pizza-app-master)
 
 
+## Setup/Installation Requirements
+- Open terminal (CTRL ALT T)
+- git clone https://monicaoyugi.github.io/Pizza-App/
+- cd delani-studio
+- use atom . or code . to open the clone repo on Atom or VS-code respectively
+
 ## Description
 The website has a navigation bar to take the user to the available pages within the website.
 
