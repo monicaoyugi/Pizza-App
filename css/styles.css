@@ -9,23 +9,27 @@ body {
 
 .wrapper {
   text-align: center;
-  background-image: url("../img/pizza2.jpeg");
-  background-repeat: no-repeat;
-  background-size:cover;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
   
 }
-.nav {
-  height: 80px;
+.nav li a {
+  color: rgba(0, 128, 0, 0.671);
 }
 
 .logo {
-  margin: 1%;
+  margin: 30px 0px 30px 50px;
   color: orangered;
   font-family: "Satisfy", cursive;
 }
 
 .am {
   color: green;
+}
+.nav{
+  margin: 30px 50px 30px 50px;
+
 }
 
 .nav ul {
@@ -36,7 +40,7 @@ body {
 }
 
  .nav li {
-  margin-top: 6px;
+  margin: 6px 10px 0px 0px;
   display: inline-block;
   text-decoration: none;
 }
@@ -68,7 +72,7 @@ label {
 }
 
 button {
-  margin: 3%;
+  margin: 10px;
 }
 
 .bg-info {
@@ -98,4 +102,8 @@ footer {
   font-weight: bolder;
   font-style: italic;
   margin: 2%;
+}
+.landing-text{
+  padding:0px;
+  margin: 0px;
 }

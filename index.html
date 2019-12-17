@@ -5,40 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title >Order the Pizza</title>
+    <title>Order the Pizza</title>
     <!-- bootstrap css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <!-- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Caveat|Kalam|Pacifico|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Caveat|Kalam|Pacifico|Permanent+Marker|Satisfy&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="wrapper">
+    <div class="wrapper">
         <h1 id="piz-pap" class="logo">Pizza <span class="am"> Amore!</span></h1>
-     
-      <ul class="nav">
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#Order">Order</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
+
+        <ul class="nav">
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Order">Order</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
     </div>
 
 
     <!-- landing page -->
-    <div class="landing" id="home">
-        <div class="overlay">
-            <div id="push"></div>
-            <div class="landing-text">
-                <h1 class="text-white text-center"><span class="pizz">You want a Pizza!!!!</span></h1>
-            </div>
+    <div class="landing" id="Menu">
+        <!-- <div class="overlay"> -->
             <div class="h-buttons text-center">
                 <a href="#order">
                     <button class="btn bg-info floater  infinite delay-2s">Please click here Order</button>
                 </a>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <!-- order page -->
     <div class="orders" id="order">
@@ -46,7 +44,7 @@
         <div class="form-group row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8 order-overlay text-center">
-                <form class="col-sm-6 offset-sm-3 text-center">
+                <form id="my-form" class="col-sm-6 offset-sm-3 text-center">
                     <label>Pick your pizza Flavour:</label>
                     <select class="custom-select custom-select-md mb-3 flavour" id="flavour" required="">
                         <option value="vegtikka">Veg Tikka</option>
@@ -72,22 +70,22 @@
                         <option value="280">Custom Crust @ sh. 280</option>
                     </select>
                     <div class="Toppings">
-                    <label>Select Your favourite Toppings</label>
-                    <select class="custom-select custom-select-md mb-3" id="toppings" required="">
-                        <option value="80">Tomato @ sh. 80</option>
-                        <option value="80">Onions @ sh. 80</option>
-                        <option value="80">Mushroom @ sh. 80</option>
-                        <option value="80">Green Pepper @ sh. 80</option>
-                        <option value=""></option>
-                        <option value="120">Olives @ sh. 120</option>
-                        <option value="120">Pineapple @ sh. 120</option>
-                        <option value="120">Sweet Corn @ sh. 120</option>
-                        <option value="120">Macon @ sh. 120</option>
-                        <option value="120">Mince @ sh. 120</option>
-                        <option value=""></option>
-                        <option value="170">Beef Peperoni @ sh. 170</option>
-                        <option value="170">Periperi Chicken @ sh. 170</option>
-                    </select>
+                        <label>Select Your favourite Toppings</label>
+                        <select class="custom-select custom-select-md mb-3" id="toppings" required="">
+                            <option value="80">Tomato @ sh. 80</option>
+                            <option value="80">Onions @ sh. 80</option>
+                            <option value="80">Mushroom @ sh. 80</option>
+                            <option value="80">Green Pepper @ sh. 80</option>
+                            <option value=""></option>
+                            <option value="120">Olives @ sh. 120</option>
+                            <option value="120">Pineapple @ sh. 120</option>
+                            <option value="120">Sweet Corn @ sh. 120</option>
+                            <option value="120">Macon @ sh. 120</option>
+                            <option value="120">Mince @ sh. 120</option>
+                            <option value=""></option>
+                            <option value="170">Beef Peperoni @ sh. 170</option>
+                            <option value="170">Periperi Chicken @ sh. 170</option>
+                        </select>
                     </div>
                     <label for="number">Number of Pizza's</label>
                     <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
@@ -97,11 +95,14 @@
                 </form>
                 <a href="#summary">
 
-                    <button type="submit" class="btn btn-success toppings" id="add-toppings">
+                    <button type="button" class="btn btn-success toppings" id="add-toppings">
                         Add Toppings
                     </button>
-                    <button type="submit" class="btn btn-success checkout" id="checkout">
+                    <button type="button" class="btn btn-success checkout" id="checkout">
                         Checkout
+                    </button>
+                    <button type="button" class="btn btn-success checkout" id="refresh">
+                        Refresh
                     </button>
                 </a>
 
@@ -110,17 +111,35 @@
         </div>
     </div>
 
-
-
     <!-- order summary -->
 
     <div class="order-summary" id="sum-order">
         <h1 class="text-center" id="summary">Order Summary</h1>
-        <h2 class="text-center summary" style="">Provide location details</h2>
-        <ol id="list" class="text-center sum" style="font-family: system-ui; font-size: 24px;"> <br>Flavour: <br>Size:
-            <br> Crust : <br>Toppings : <br> Number of pizzas : <br>Total Price : <br> <br></ol>
+        <div id="cart">
+            <table class="table" id="tablecart">
+                <thead>
+                    <tr>
+                        <th scope="col">Flavour</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Toppings</th>
+                        <th scope="col">Number</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <h2 class="text-center summary">Provide location details</h2>
+      
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button type="submit" class="deliver">Make Delivery</button>
+        <button type="submit" class="pick-up" id="pickup">Pick Up</button>
+    </div>
 
-
+<!-- make delivery pop-up-->
         <div class="cdata-overlay" style="display: none;">
             <div class="customerdata row">
                 <div class="col-sm-3"></div>
@@ -129,16 +148,14 @@
                     <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
                     <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
                     <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make
-                        Delivery</button>
+
+                    </button>
                 </form>
 
                 <div class="col-sm-3"></div>
             </div>
         </div>
-        <div class="d-block mx-auto text-center">
-            <button class="deliver" style="">Make Delivery</button>
-            <button class="pick-up" style="">Pick Up</button>
-        </div>
+        
     </div>
 
 
@@ -170,7 +187,7 @@
         </div>
     </div>
     <footer>
-    <h2> Copyright (c) {2019} Monica Oyugi.</h2>
+        <h2> Copyright (c) {2019} Monica Oyugi.</h2>
     </footer>
 
 
