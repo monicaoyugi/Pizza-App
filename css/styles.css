@@ -12,6 +12,7 @@ body {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
+  background-attachment: fixed;
   
 }
 .nav li a {
@@ -101,6 +102,11 @@ button {
   background-image: url("../img/pizza.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.click-me{
+  color: white;
+
 }
 
 footer {

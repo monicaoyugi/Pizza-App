@@ -81,17 +81,7 @@ $(document).ready(function(){
   });
 
   $("#refresh").click(function(){
-    $('#my-form').each(function(){
-      this.reset();
-    });
+    $('#my-form').reset();
   });
-  });
-});
-
-
-$(".refresh").click(function(event){
-  $('form').each(function(){
-    this.reset();
-
   });
 });

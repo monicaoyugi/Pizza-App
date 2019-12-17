@@ -4,13 +4,16 @@ ___by Monica Oyugi___
 ## link to site
 
 
-<!-- ## code grade
 
-[![codebeat badge](https://codebeat.co/badges/e64d092f-8109-4585-bdde-77df3f2c4ff5)](https://codebeat.co/projects/github-com-monicaoyugi-delani-studio-master) -->
+## code grade
+
+[![codebeat badge]([![codebeat badge](https://codebeat.co/badges/fb71b26e-36d9-4458-a0c3-af25e0113281)](https://codebeat.co/projects/github-com-monicaoyugi-pizza-app-master))
 
 
 ## Description
+The website has a navigation bar to take the user to the available pages within the website.
 
+There is a form for user input that is required to be filled with the relevant information for an order to be made; after the user clicks the submit morder button.
 
 
 ## Technology Used
