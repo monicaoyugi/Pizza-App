@@ -29,6 +29,7 @@ body {
 }
 .nav{
   margin: 30px 50px 30px 50px;
+  font-family: 'Permanent Marker', cursive;
 
 }
 
@@ -37,6 +38,7 @@ body {
   width: 800px;
   list-style: none;
   background: rgba(0, 0, 0, 0.2);
+  font-family: 'Permanent Marker', cursive;
 }
 
  .nav li {
