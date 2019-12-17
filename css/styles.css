@@ -59,6 +59,11 @@ body {
   color: orangered;
 }
 
+.landing-text{
+  padding:0px;
+  margin: 0px;
+}
+
 .orders {
   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(24, 22, 22, 0.507)), url("../img/pizza.jpg");
   background-attachment: fixed;
@@ -103,7 +108,4 @@ footer {
   font-style: italic;
   margin: 2%;
 }
-.landing-text{
-  padding:0px;
-  margin: 0px;
-}
+

@@ -12,6 +12,7 @@ ___by Monica Oyugi___
 ## Description
 
 
+
 ## Technology Used
 The web page is constructed out of HTML and CSS and Javascript. Also with assistance from their library counterpart i.e Bootstrap and jQuery.
 
