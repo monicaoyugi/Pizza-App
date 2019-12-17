@@ -1,7 +1,7 @@
 ## PIZZA APP
 ___by Monica Oyugi___
 
-## link to site
+## Link to site
 
 https://monicaoyugi.github.io/Pizza-App/
 
