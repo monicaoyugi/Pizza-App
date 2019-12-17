@@ -3,11 +3,12 @@ ___by Monica Oyugi___
 
 ## link to site
 
+https://monicaoyugi.github.io/Pizza-App/
 
 
 ## code grade
 
-[![codebeat badge]([![codebeat badge](https://codebeat.co/badges/fb71b26e-36d9-4458-a0c3-af25e0113281)](https://codebeat.co/projects/github-com-monicaoyugi-pizza-app-master))
+[![codebeat badge](https://codebeat.co/badges/fb71b26e-36d9-4458-a0c3-af25e0113281)](https://codebeat.co/projects/github-com-monicaoyugi-pizza-app-master)
 
 
 ## Description
