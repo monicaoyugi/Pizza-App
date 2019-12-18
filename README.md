@@ -17,6 +17,9 @@ https://monicaoyugi.github.io/Pizza-App/
 - cd delani-studio
 - use atom . or code . to open the clone repo on Atom or VS-code respectively
 
+## Bugs
+Known bugs on reset button.
+
 ## Description
 The website has a navigation bar to take the user to the available pages within the website.
 
